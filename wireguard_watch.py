@@ -105,7 +105,7 @@ def get_iface_ip():
     # The startswith line removes any vmware made interfaces that break the logic.
     iface_ip ={}
     for iface in ni.interfaces():
-        if iface.tolower().startswith('v'):
+        if iface.startswith('v'):
             continue
         iface_ip[iface] = ni.ifaddresses(iface)[ni.AF_INET][0]['addr']
         
