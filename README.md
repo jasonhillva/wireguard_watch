@@ -30,7 +30,7 @@ Add line to crontab
 crontab -e
 ```
 
-If you want the file to be run every hour.  Otherwise, adjust the timing to your liking.
+Add this line to your crontab.  Make sure you add the correct path.  Mine was /root.  If you want the file to be run every hour.  Otherwise, adjust the timing to your liking.
 ```
 0 * * * * /usr/bin/python3 /root/wireguard_watch.py
 ```
